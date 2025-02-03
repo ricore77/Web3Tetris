@@ -69,7 +69,6 @@ In the near future, the game will integrate on-chain game state saving, allowing
 ## Diagram
 This diagram represents the roles and interactions between different components of the game:
 
-\`\`\`
 +---------------------+           +---------------------------+
 |      Player         |           |  AbstractTetrisBet Contract |
 +---------------------+           +---------------------------+
@@ -87,7 +86,7 @@ This diagram represents the roles and interactions between different components 
 |  - placeBet()       |           |  - Controls game state    |
 |  - getReward()      |           |  - Tracks score           |
 +---------------------+           +---------------------------+
-\`\`\`
+
 
 ## Conclusion
 The Tetris Bet project merges the classic Tetris experience with blockchain technology, creating a decentralized game where players and bettors can interact transparently and securely. With future enhancements to save the game state on-chain, this project will continue to evolve and innovate.
