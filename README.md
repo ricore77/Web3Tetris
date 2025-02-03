@@ -5,6 +5,10 @@ The Tetris Bet game is an exciting project that combines the classic Tetris game
 
 In the future, the game state will be saved on-chain, creating a permanent, immutable record of each game, bet, and player performance, enhancing transparency and security.
 
+##Playground!!!!!
+[TestrisBet](https://tinyurl.com/mrxecxjt)
+
+
 ## Architecture
 ### Technical Architecture
 The architecture of the Tetris Bet game is designed with scalability and modularity in mind. It separates the core game logic from blockchain interactions, creating a seamless experience for both players and bettors.
