@@ -102,6 +102,23 @@ npm run start:web
 \`\`\`
 This will start a local development server at http://localhost:3000. Open this URL in your browser to interact with the Tetris game via a web interface.
 
+### Running Unit Tests
+Once dependencies are installed, you can run the tests using Jest. To do so, use the following command:
+
+```bash
+npm run test
+```
+This will execute all the unit tests defined in the project. The test results will be printed in the terminal or console, showing whether all tests passed or failed.
+
+Test Coverage
+To check the test coverage (which shows how much of the code is covered by tests), you can run:
+
+bash
+Copy
+Edit
+npm run test:coverage
+This command will display the percentage of the code covered by tests.
+
 ## Game Overview
 The Tetris Bet game is a twist on the classic Tetris game. The game is played just like regular Tetris, but there’s an added layer of interaction: bettors can predict the player’s performance, and rewards are distributed based on the outcome.
 
