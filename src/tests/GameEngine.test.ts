@@ -2,6 +2,9 @@
 import { GameEngine, Piece } from "../game-engine/GameEngine";
 import { Tetrominoes } from "../game-engine/Tetrominoes";
 
+// If Direction isn't exported, you can define it here:
+type Direction = "left" | "right" | "down";
+
 describe("GameEngine", () => {
   let engine: GameEngine;
 
@@ -66,9 +69,9 @@ describe("GameEngine", () => {
       };
 
       engine.spawnPiece(piece);
-      engine.movePiece("right");
+      engine.movePiece("right" as Direction);
       expect(engine.getState().activePiece?.x).toBe(4);
-      engine.movePiece("left");
+      engine.movePiece("left" as Direction);
       expect(engine.getState().activePiece?.x).toBe(3);
     });
 
@@ -82,9 +85,9 @@ describe("GameEngine", () => {
       };
 
       engine.spawnPiece(piece);
-      engine.movePiece("down"); // Soft drop by one row.
+      engine.movePiece("down" as Direction);
       const state = engine.getState();
-      expect(state.score).toBe(1); // Expect +1 point for a soft drop.
+      expect(state.score).toBe(1);
     });
   });
 

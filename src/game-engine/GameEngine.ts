@@ -7,6 +7,8 @@ export interface Piece {
   rotation: number;
 }
 
+export type Direction = "left" | "right" | "down";
+
 export class GameEngine {
   public grid: (string | null)[][];
   private activePiece: Piece | null;
@@ -44,8 +46,8 @@ export class GameEngine {
     );
   }
 
-  movePiece(direction: "left" | "right" | "down") {
-    if (!this.activePiece || this.gameOver) return;
+  public movePiece(direction: Direction): boolean {
+    if (!this.activePiece || this.gameOver) return false;
     const newPosition = { ...this.activePiece };
 
     if (direction === "left") newPosition.x--;
@@ -55,9 +57,12 @@ export class GameEngine {
     if (this.canPlace(newPosition)) {
       this.activePiece = newPosition;
       if (direction === "down") this.score += 1; // Soft drop: +1 per row.
+      return true;
     } else if (direction === "down") {
       this.placePiece();
+      return true;
     }
+    return false;
   }
 
   rotatePiece() {
