@@ -1,4 +1,4 @@
-# Tetris Bet Game
+![image](https://github.com/user-attachments/assets/67696d2a-f55c-4a52-878f-3ab177650c3f)# Tetris Bet Game
 
 ## Overview
 The Tetris Bet game is an exciting project that combines the classic Tetris game with blockchain elements, allowing for player-bettor interaction in a decentralized manner. Players engage in the game, and bettors can place predictions on the player’s performance. Rewards are distributed based on the game outcomes and bettors’ predictions.
@@ -10,6 +10,8 @@ In the future, the game state will be saved on-chain, creating a permanent, immu
 The architecture of the Tetris Bet game is designed with scalability and modularity in mind. It separates the core game logic from blockchain interactions, creating a seamless experience for both players and bettors.
 
 Key components:
+![image](https://github.com/user-attachments/assets/065b590f-d9dd-4bb5-83e8-c1f4b702b694)
+
 
 - **Frontend (Web/CLI):**  
   The user interface for both the player and the bettor is built using React and Next.js for the web version, and a command-line interface (CLI) for the console version. The frontend interacts with the backend to manage the game state and user inputs.
