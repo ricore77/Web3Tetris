@@ -39,6 +39,9 @@ The **Board** is responsible for rendering the current game state. This can be d
 - Display the score and game-over status.
 - Update the UI whenever the game state changes.
 
+
+[AbstractTetrisBet.sol](src/docs/contract.md)
+
 ![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
 
 ## How to Install
