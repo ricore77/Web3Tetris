@@ -17,8 +17,20 @@ Key components:
 - **Frontend (Web/CLI):**  
   The user interface for both the player and the bettor is built using React and Next.js for the web version, and a command-line interface (CLI) for the console version. The frontend interacts with the backend to manage the game state and user inputs.
 
-- **Game Engine:**  
-  The Game Engine handles the core game mechanics, including spawning pieces, moving them, and checking for game-over conditions. It simulates the classic Tetris gameplay and provides the game state (grid, active piece, score) to the frontend.
+
+### 1. Game Engine (Core Tetris Logic)
+The **GameEngine** class is the heart of the Tetris game. It is responsible for managing the grid, the active piece, piece movement, rotation, line clearing, and scoring. It doesn't have any concept of the player or the user interface.
+
+**Responsibilities**:
+- Spawn and move pieces on the grid.
+- Detect and handle collisions.
+- Track the score and game-over state.
+- Handle piece rotation and hard drops.
+- Clear full lines and update the grid.
+
+**Benefits**:
+- Purely logic-based: The game engine is decoupled from user input, UI, and player behavior.
+- Easily testable: Unit tests can focus on the core game mechanics without worrying about rendering or player decisions.
 
 ## How to Install
 ### Prerequisites
