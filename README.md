@@ -69,23 +69,17 @@ In the near future, the game will integrate on-chain game state saving, allowing
 ## Diagram
 This diagram represents the roles and interactions between different components of the game:
 
-+---------------------+           +---------------------------+
-|      Player         |           |  AbstractTetrisBet Contract |
-+---------------------+           +---------------------------+
-|  - playGame()       |  <----->  |  - placeBet()             |
-|  - endGame()        |           |  - endGame()              |
-|  - claimReward()    |           |  - calculateReward()      |
-+---------------------+           |  - claimReward()          |
-                                  +---------------------------+
-                                          ^ 
-                                          | 
-                                          v
-+---------------------+           +---------------------------+
-|     Bettor          |           |        Game Engine        |
-+---------------------+           +---------------------------+
-|  - placeBet()       |           |  - Controls game state    |
-|  - getReward()      |           |  - Tracks score           |
-+---------------------+           +---------------------------+
+graph LR
+    A[Player] -- playGame() --> B[AbstractTetrisBet Contract]
+    A -- endGame() --> B
+    A -- claimReward() --> B
+    B -- placeBet() --> C[Bettor]
+    B -- endGame() --> C
+    B -- calculateReward() --> C
+    C -- placeBet() --> B
+    C -- getReward() --> A
+    B -- Controls game state --> D[Game Engine]
+    B -- Tracks score --> D
 
 
 ## Conclusion
