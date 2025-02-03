@@ -45,6 +45,43 @@ The **Board** is responsible for rendering the current game state. This can be d
 ### Prerequisites
 - Node.js: Ensure you have Node.js v16 or later installed on your machine.
 
+  The **Prerequisites** section of the README file explains the tools and software you need to have installed in order to run the Tetris Bet game project.
+
+Here’s how the **Prerequisites** section could look:
+
+---
+
+### Prerequisites
+
+Before you can run the game, make sure you have the following installed on your system:
+
+1. **Node.js (v16 or later)**
+   - Node.js is required to run the game’s backend and frontend. It’s used for managing packages and running the server.
+   - To install Node.js, go to [Node.js official website](https://nodejs.org/) and download the latest LTS version.
+
+   To check if you already have Node.js installed, run the following command in your terminal:
+   ```bash
+   node -v
+   ```
+   This should return the version of Node.js that is installed. If it’s lower than v16, you will need to update it.
+
+2. **npm (Node Package Manager)**
+   - `npm` is the package manager that comes with Node.js and is used to install the dependencies required to run the project.
+   - It should be installed automatically with Node.js. You can check if it's installed by running:
+     ```bash
+     npm -v
+     ```
+   - If `npm` is not installed, reinstall Node.js from the [official website](https://nodejs.org/) to ensure it comes with the package manager.
+
+3. **Git**
+   - Git is required to clone the repository to your local machine.
+   - You can download Git from [here](https://git-scm.com/downloads).
+   - Check if Git is installed by running:
+     ```bash
+     git --version
+     ```
+
+
 ### Installation Steps
 1. Clone the Repository:
 \`\`\`
