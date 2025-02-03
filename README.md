@@ -120,6 +120,18 @@ Once the game ends, the system calculates the rewards based on the bettor’s pr
 ## Future Work
 In the near future, the game will integrate on-chain game state saving, allowing each game’s progress to be stored permanently on the blockchain. This will ensure the immutability and traceability of each player’s game, performance, and bet.
 
+## Project Status
+The Tetris Bet game is a work in progress. Currently, the smart contract that governs the betting mechanics and reward distribution has been completed and deployed. This contract ensures fair interaction between players and bettors.
+
+At this stage, the smart contract handles the following functionalities:
+
+Betting: Bettors can place bets on the player's performance.
+Game Outcome: Once the game ends, the contract calculates and distributes rewards to the bettors based on their predictions.
+Reward Claiming: Players and bettors can claim their rewards once the game concludes.
+The on-chain integration for saving the game state, tracking player progress, and making the game fully decentralized is still under development. In the near future, we plan to store game data such as scores, player actions, and bets directly on the blockchain to ensure transparency and immutability.
+
+Stay tuned for updates as we move towards completing the on-chain functionality!
+
 ## Diagram
 This diagram represents the roles and interactions between different components of the game:
 ---
