@@ -10,12 +10,11 @@ In the future, the game state will be saved on-chain, creating a permanent, immu
 The architecture of the Tetris Bet game is designed with scalability and modularity in mind. It separates the core game logic from blockchain interactions, creating a seamless experience for both players and bettors.
 
 Key components:
-![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
-![image](https://github.com/user-attachments/assets/065b590f-d9dd-4bb5-83e8-c1f4b702b694)
-
 
 - **Frontend (Web/CLI):**  
   The user interface for both the player and the bettor is built using React and Next.js for the web version, and a command-line interface (CLI) for the console version. The frontend interacts with the backend to manage the game state and user inputs.
+
+![image](https://github.com/user-attachments/assets/065b590f-d9dd-4bb5-83e8-c1f4b702b694)
 
 
 ### 1. Game Engine (Core Tetris Logic)
@@ -31,6 +30,16 @@ The **GameEngine** class is the heart of the Tetris game. It is responsible for 
 **Benefits**:
 - Purely logic-based: The game engine is decoupled from user input, UI, and player behavior.
 - Easily testable: Unit tests can focus on the core game mechanics without worrying about rendering or player decisions.
+
+### 2. Board (Rendering the Game State)
+The **Board** is responsible for rendering the current game state. This can be done in various ways, such as via a **CLI** (console) or a **React**/graphical user interface.
+
+**Responsibilities**:
+- Render the game grid and active pieces.
+- Display the score and game-over status.
+- Update the UI whenever the game state changes.
+
+![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
 
 ## How to Install
 ### Prerequisites
