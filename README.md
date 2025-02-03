@@ -42,13 +42,6 @@ The **Board** is responsible for rendering the current game state. This can be d
 ![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
 
 ## How to Install
-### Prerequisites
-- Node.js: Ensure you have Node.js v16 or later installed on your machine.
-
-  The **Prerequisites** section of the README file explains the tools and software you need to have installed in order to run the Tetris Bet game project.
-
-Here’s how the **Prerequisites** section could look:
-
 ---
 
 ### Prerequisites
