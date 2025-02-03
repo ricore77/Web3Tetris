@@ -85,7 +85,7 @@ Before you can run the game, make sure you have the following installed on your 
 ### Installation Steps
 1. Clone the Repository:
  ```bash
-git clone [https://github.com/yourusername/tetris-bet-game.git](https://github.com/ricore77/Web3Tetris.git)
+git clone [https://github.com/ricore77 /tetris-bet-game.git](https://github.com/ricore77/Web3Tetris.git)
 cd tetris-bet-game
  ```
 2. Install Dependencies:
