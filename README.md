@@ -10,6 +10,7 @@ In the future, the game state will be saved on-chain, creating a permanent, immu
 The architecture of the Tetris Bet game is designed with scalability and modularity in mind. It separates the core game logic from blockchain interactions, creating a seamless experience for both players and bettors.
 
 Key components:
+![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
 ![image](https://github.com/user-attachments/assets/065b590f-d9dd-4bb5-83e8-c1f4b702b694)
 
 
