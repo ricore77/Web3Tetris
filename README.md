@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/67696d2a-f55c-4a52-878f-3ab177650c3f)# Tetris Bet Game
+TetrisBet
 
 ## Overview
 The Tetris Bet game is an exciting project that combines the classic Tetris game with blockchain elements, allowing for player-bettor interaction in a decentralized manner. Players engage in the game, and bettors can place predictions on the player’s performance. Rewards are distributed based on the game outcomes and bettors’ predictions.
