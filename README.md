@@ -1,4 +1,4 @@
-# Tetris Bet Game
+TetrisBet
 
 ## Overview
 The Tetris Bet game is an exciting project that combines the classic Tetris game with blockchain elements, allowing for player-bettor interaction in a decentralized manner. Players engage in the game, and bettors can place predictions on the player’s performance. Rewards are distributed based on the game outcomes and bettors’ predictions.
@@ -14,8 +14,32 @@ Key components:
 - **Frontend (Web/CLI):**  
   The user interface for both the player and the bettor is built using React and Next.js for the web version, and a command-line interface (CLI) for the console version. The frontend interacts with the backend to manage the game state and user inputs.
 
-- **Game Engine:**  
-  The Game Engine handles the core game mechanics, including spawning pieces, moving them, and checking for game-over conditions. It simulates the classic Tetris gameplay and provides the game state (grid, active piece, score) to the frontend.
+![image](https://github.com/user-attachments/assets/065b590f-d9dd-4bb5-83e8-c1f4b702b694)
+
+
+### 1. Game Engine (Core Tetris Logic)
+The **GameEngine** class is the heart of the Tetris game. It is responsible for managing the grid, the active piece, piece movement, rotation, line clearing, and scoring. It doesn't have any concept of the player or the user interface.
+
+**Responsibilities**:
+- Spawn and move pieces on the grid.
+- Detect and handle collisions.
+- Track the score and game-over state.
+- Handle piece rotation and hard drops.
+- Clear full lines and update the grid.
+
+**Benefits**:
+- Purely logic-based: The game engine is decoupled from user input, UI, and player behavior.
+- Easily testable: Unit tests can focus on the core game mechanics without worrying about rendering or player decisions.
+
+### 2. Board (Rendering the Game State)
+The **Board** is responsible for rendering the current game state. This can be done in various ways, such as via a **CLI** (console) or a **React**/graphical user interface.
+
+**Responsibilities**:
+- Render the game grid and active pieces.
+- Display the score and game-over status.
+- Update the UI whenever the game state changes.
+
+![image](https://github.com/user-attachments/assets/a620eed4-e58a-4e52-9de3-04d462d9e28c)
 
 ## How to Install
 ### Prerequisites
