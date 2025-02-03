@@ -77,29 +77,29 @@ Before you can run the game, make sure you have the following installed on your 
 
 ### Installation Steps
 1. Clone the Repository:
-\`\`\`
+ ```bash
 git clone [https://github.com/yourusername/tetris-bet-game.git](https://github.com/ricore77/Web3Tetris.git)
 cd tetris-bet-game
-\`\`\`
+ ```
 2. Install Dependencies:
-\`\`\`
+ ```bash
 npm install
-\`\`\`
+ ```
 
 ### How to Run the Game (CLI Version)
 To run the game in CLI Mode:
 1. Navigate to the project’s root directory.
 2. Run the following command to start the CLI version:
-\`\`\`
+ ```bash
 npm run start:cli
-\`\`\`
+ ```
 
 ### How to Run the Game (Web Version)
 To run the game in Web Mode:
 Run the following command to start the web version:
-\`\`\`
+ ```bash
 npm run start:web
-\`\`\`
+ ```
 This will start a local development server at http://localhost:3000. Open this URL in your browser to interact with the Tetris game via a web interface.
 
 ### Running Unit Tests
@@ -113,10 +113,9 @@ This will execute all the unit tests defined in the project. The test results wi
 Test Coverage
 To check the test coverage (which shows how much of the code is covered by tests), you can run:
 
-bash
-Copy
-Edit
+```bash
 npm run test:coverage
+```
 This command will display the percentage of the code covered by tests.
 
 ## Game Overview
